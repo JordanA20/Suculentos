@@ -48,8 +48,13 @@ nav{
 }
 
 .nav-redes{
-    width: 45%;
+    width: 43%;
 }
+
+#infoCompra{
+    font-size: 14px;
+}
+
 
 /*Main*/
 
@@ -92,6 +97,11 @@ nav{
     border-radius: 20%;
 }
 
+.__vaners_vnr_shop{
+    width: 100%;
+    position:relative;
+}
+
 
 /*Section*/
 .contSection{
@@ -129,21 +139,21 @@ nav{
 
 /*Pagina de Menu*/
 
-/*Barra de filtro*/
-.filter{
-    width: 10rem;
-    padding-left: .4rem;
-}
+    /*Barra de filtro*/
+    .filter{
+        width: 10rem;
+        padding-left: .4rem;
+    }
 
-/*Vaner de Productos*/
+    /*Vaner de Productos*/
 
-.btn-shop{
-    border-radius: 50%;
-}
+    .btn-shop{
+        border-radius: 50%;
+    }
 
 
 
-/*Generales*/
-.pointer{
-    cursor: pointer;
-}
+    /*Generales*/
+    .pointer{
+        cursor: pointer;
+    }

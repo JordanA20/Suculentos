@@ -11,7 +11,8 @@
     </head>
     <body class="bg-light">
         <header>
-
+            <!--Nav importado-->
+            <?php include("nav.php"); ?>
         </header>
         <section>
            <div class="contSection container">
@@ -37,25 +38,25 @@
                         <div class="__vaners_vnr d-flex">
                             <button class="btn-warning btn-shop"><i class="bi bi-basket2-fill"></i></button>
                             <img class="__vnr-img" src="IMG/imgCaract.svg" alt="category">
-                            <h4 class="__vnr-tittle">Name Product</h4>
+                            <h4 class="__vnr-title">Name Product</h4>
                             <p class="__vnr-price">$5.00</p>
                         </div>
                         <div class="__vaners_vnr d-flex">
                             <button class="btn-warning btn-shop"><i class="bi bi-basket2-fill"></i></button>
                             <img class="__vnr-img" src="IMG/imgMinVanerBW.svg" alt="category">
-                            <h4 class="__vnr-tittle">Name Product</h4>
+                            <h4 class="__vnr-title">Name Product</h4>
                             <p class="__vnr-price">$5.00</p>
                         </div>
                         <div class="__vaners_vnr d-flex">
                             <button class="btn-warning btn-shop"><i class="bi bi-basket2-fill"></i></button>
                             <img class="__vnr-img" src="IMG/imgCaract.svg" alt="category">
-                            <h4 class="__vnr-tittle">Name Product</h4>
+                            <h4 class="__vnr-title">Name Product</h4>
                             <p class="__vnr-price">$5.00</p>
                         </div>
                         <div class="__vaners_vnr d-flex">
                             <button class="btn-warning btn-shop"><i class="bi bi-basket2-fill"></i></button>
                             <img class="__vnr-img" src="IMG/imgMinVanerBW.svg" alt="category">
-                            <h4 class="__vnr-tittle">Name Product</h4>
+                            <h4 class="__vnr-title">Name Product</h4>
                             <p class="__vnr-price">$5.00</p>
                         </div>
                     </div>

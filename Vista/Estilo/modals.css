@@ -1,0 +1,101 @@
+/* Modal Producto */
+#mdlP-img{
+    width: 200px;
+}
+
+#mdlP-quantity .qtt{
+    width: 40px;
+    height: 42px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#mdlP-quantity #mdlP-qttMinus{
+    border-radius: 12% 0 0 12%;
+}
+
+#mdlP-quantity #mdlP-qttPlus{
+    border-radius: 0 12% 12% 0;
+}
+
+#mdlP-qttMinus:hover, #mdlP-qttPlus:hover{
+    border-width: 3px;
+}
+
+
+/* Modal Carrito */
+#mdlContainer{
+    height: 100%;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#mdlC-item{
+    width: 90%;
+    height: 150px;
+}
+
+#mdlC-content{
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border: .1rem solid grey;
+    border-radius: 1rem;
+}
+
+#mdlC-img{
+    width: 90px;
+    margin: .3rem .5rem;
+}
+
+#mdlC-price{
+    font-size: 16px;
+    margin: 1rem 0;
+    color:dimgray;
+}
+
+#mdlC-quantity .qtt{
+    width: 30px;
+    height: 32px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-style: none;
+    background-color: transparent;
+    color: black;
+}
+
+#mdlC-btnClose{
+    height: 120px;;
+}
+
+.mdlFooter{
+    height: 150px;
+}
+
+.mdlFooter-cont{
+    width: 100%;
+}
+
+.mdlFooter-subCont{
+    width: 75%;
+}
+
+#btnCheckout{
+    height: 3rem;
+}
+
+/* 
+#mdlC-quantity #mdlP-qttMinus{
+    border-radius: 12% 0 0 12%;
+}
+
+#mdlC-quantity #mdlP-qttPlus{
+    border-radius: 0 12% 12% 0;
+} */
+
+/* 
+#mdlC-quantity{
+
+} */
