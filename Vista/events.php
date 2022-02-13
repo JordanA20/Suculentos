@@ -34,30 +34,30 @@
                 <div class="contSection-container">
                     <!-- <h3 class="my-3">The Best Sellers</h3> -->
 
-                    <div class="container-vaners">
-                        <div class="__vaners_vnr d-flex">
+                    <div class="container-items">
+                        <div class="__items_item d-flex">
                             <button class="btn-warning btn-shop"><i class="bi bi-basket2-fill"></i></button>
-                            <img class="__vnr-img" src="IMG/imgCaract.svg" alt="category">
-                            <h4 class="__vnr-title">Name Product</h4>
-                            <p class="__vnr-price">$5.00</p>
+                            <img class="__item-img" src="IMG/imgCaract.svg" alt="category">
+                            <h4 class="__item-title">Name Product</h4>
+                            <p class="__item-price">$5.00</p>
                         </div>
-                        <div class="__vaners_vnr d-flex">
+                        <div class="__items_item d-flex">
                             <button class="btn-warning btn-shop"><i class="bi bi-basket2-fill"></i></button>
-                            <img class="__vnr-img" src="IMG/imgMinVanerBW.svg" alt="category">
-                            <h4 class="__vnr-title">Name Product</h4>
-                            <p class="__vnr-price">$5.00</p>
+                            <img class="__item-img" src="IMG/imgMinVanerBW.svg" alt="category">
+                            <h4 class="__item-title">Name Product</h4>
+                            <p class="__item-price">$5.00</p>
                         </div>
-                        <div class="__vaners_vnr d-flex">
+                        <div class="__items_item d-flex">
                             <button class="btn-warning btn-shop"><i class="bi bi-basket2-fill"></i></button>
-                            <img class="__vnr-img" src="IMG/imgCaract.svg" alt="category">
-                            <h4 class="__vnr-title">Name Product</h4>
-                            <p class="__vnr-price">$5.00</p>
+                            <img class="__item-img" src="IMG/imgCaract.svg" alt="category">
+                            <h4 class="__item-title">Name Product</h4>
+                            <p class="__item-price">$5.00</p>
                         </div>
-                        <div class="__vaners_vnr d-flex">
+                        <div class="__items_item d-flex">
                             <button class="btn-warning btn-shop"><i class="bi bi-basket2-fill"></i></button>
-                            <img class="__vnr-img" src="IMG/imgMinVanerBW.svg" alt="category">
-                            <h4 class="__vnr-title">Name Product</h4>
-                            <p class="__vnr-price">$5.00</p>
+                            <img class="__item-img" src="IMG/imgMinVanerBW.svg" alt="category">
+                            <h4 class="__item-title">Name Product</h4>
+                            <p class="__item-price">$5.00</p>
                         </div>
                     </div>
                 </div>

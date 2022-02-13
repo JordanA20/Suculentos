@@ -9,7 +9,7 @@
             </div>
             <div class="modal-body">
                 <div id="mdlP-item">
-                    <div class="__vaners_vnr d-flex flex-row align-items-center">
+                    <div class="__items_item d-flex flex-row align-items-center">
                         <img id="mdlP-img" src="/Suculentos/Vista/IMG/imgCaract.svg" alt="category">
                         <div class="container-xxl">
                             <h4 id="mdlP-title"></h4>
@@ -18,14 +18,15 @@
                                 <h5 id="mdlP-price"></h5>
                             </div>
                         </div>
+                        <input id="mdlP-id" type="hidden" name="idProduct">
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <div id="mdlP-quantity" class="d-flex">
-                    <button class="qtt" id="mdlP-qttMinus"><i class="bi bi-dash-lg"></i></button>
-                    <input type="text" class="qtt" id="mdlP-qttValue" name="quantityProduct" value="1" pattern="[0-9]{100}" readonly>
-                    <button class="qtt" id="mdlP-qttPlus"><i class="bi bi-plus-lg"></i></button>
+                <div class="mdlP-quantity d-flex">
+                    <button class="qtt qttMinus"><i class="bi bi-dash-lg"></i></button>
+                    <input type="text" class="qtt qttValue" name="quantityProduct" value="1" pattern="[0-9]{100}" readonly>
+                    <button class="qtt qttPlus"><i class="bi bi-plus-lg"></i></button>
                 </div>
                 <!--<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CLOSE</button>-->
                 <button type="button" class="btn btn-primary" id="addToCart">ADD TO CART</button>
@@ -61,22 +62,22 @@
 </div>
 
 <!-- Template of carrito  -->
-<template id="templateCart">
-    <div id="mdlC-content">
+<template class="templateCart">
+    <div class="mdlC-content">
         <div class="d-flex flex-row align-items-center">
-            <img id="mdlC-img" src="/Suculentos/Vista/IMG/imgCaract.svg" alt="category">
+            <img class="mdlC-img pointer" src="/Suculentos/Vista/IMG/imgCaract.svg" alt="category">
             <div class="container-sm">
-                <h4 id="mdlC-title"></h4>
-                <h5 id="mdlC-price"></h5>
-                <div id="mdlC-quantity" class="d-flex justify-content-end">
-                    <input id="mdlC-id" type="hidden" name="idProduct">
-                    <button class="qtt mdlC-qttMinus" id=""><i class="bi bi-dash-lg"></i></button>
-                    <input type="text" class="qtt" id="mdlC-qttValue" name="quantityArticle" value="1" pattern="[0-9]{100}" readonly>
-                    <button class="qtt mdlC-qttPlus" id=""><i class="bi bi-plus-lg"></i></button>
+                <h4 class="mdlC-title pointer"></h4>
+                <h5 class="mdlC-price"></h5>
+                <input class="mdlC-id" type="hidden" name="idProduct">
+                <div class="mdlC-quantity d-flex justify-content-end">
+                    <button class="qtt qttMinus"><i class="bi bi-dash-lg pointer"></i></button>
+                    <input type="text" class="qtt qttValue" name="quantityArticle" value="1" pattern="[0-9]{100}" readonly>
+                    <button class="qtt qttPlus"><i class="bi bi-plus-lg pointer"></i></button>
                 </div>
             </div>
-            <div id="mdlC-btnClose" class="d-flex align-items-start">
-                <button type="button" class="btn-close" aria-label="Close"></button>
+            <div class="mdlC-btnClose" class="d-flex align-items-start">
+                <button class="btn-close" type="button" aria-label="Close"></button>
             </div>
         </div>
     </div>

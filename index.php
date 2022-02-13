@@ -22,31 +22,31 @@
                         <h4>Compruebalo tu mismo</h3>
                     </div>
                     <div class="__head_vaners">
-                        <div class="__vaners_vnr d-flex">
-                            <img class="__vnr-img" src="Vista/IMG/imgCaract.svg" alt="category">
-                            <h4 class="__vnr-title">Category</h4> 
-                            <div class="__vaners_vnr-linea"></div>
-                            <p class="__vnr-txt">Description of category <br> 
+                        <div class="__items_item d-flex justify-content-start">
+                            <img class="__item-img" src="Vista/IMG/imgCaract.svg" alt="category">
+                            <h4 class="__item-title">Category</h4> 
+                            <div class="__items_item-linea"></div>
+                            <p class="__item-txt">Description of category <br> 
                                                 category one
                             </p>
                         </div>
-                        <div class="__vaners_vnr d-flex">
-                            <img class="__vnr-img" src="Vista/IMG/imgMinVanerBW.svg" alt="category">
-                            <h4 class="__vnr-title">Category</h4> 
-                            <div class="__vaners_vnr-linea"></div>
-                            <p class="__vnr-txt">Description of category</p>
+                        <div class="__items_item d-flex justify-content-start">
+                            <img class="__item-img" src="Vista/IMG/imgMinVanerBW.svg" alt="category">
+                            <h4 class="__item-title">Category</h4> 
+                            <div class="__items_item-linea"></div>
+                            <p class="__item-txt">Description of category</p>
                         </div>
-                        <div class="__vaners_vnr d-flex">
-                            <img class="__vnr-img" src="Vista/IMG/imgCaract.svg" alt="category">
-                            <h4 class="__vnr-title">Category</h4> 
-                            <div class="__vaners_vnr-linea"></div>
-                            <p class="__vnr-txt">Description of category</p>
+                        <div class="__items_item d-flex justify-content-start">
+                            <img class="__item-img" src="Vista/IMG/imgCaract.svg" alt="category">
+                            <h4 class="__item-title">Category</h4> 
+                            <div class="__items_item-linea"></div>
+                            <p class="__item-txt">Description of category</p>
                         </div>
-                        <div class="__vaners_vnr d-flex">
-                            <img class="__vnr-img" src="Vista/IMG/imgMinVanerBW.svg" alt="category">
-                            <h4 class="__vnr-title">Category</h4> 
-                            <div class="__vaners_vnr-linea"></div>
-                            <p class="__vnr-txt">Description of category </p>
+                        <div class="__items_item d-flex justify-content-start">
+                            <img class="__item-img" src="Vista/IMG/imgMinVanerBW.svg" alt="category">
+                            <h4 class="__item-title">Category</h4> 
+                            <div class="__items_item-linea"></div>
+                            <p class="__item-txt">Description of category </p>
                         </div>
                     </div>
                 </div>
@@ -60,26 +60,26 @@
                 <div class="contSection-container">
                     <h3 class="my-3">The Best Sellers</h3>
 
-                    <div class="container-vaners">
-                        <div class="__vaners_vnr d-flex">
-                            <img class="__vnr-img" src="Vista/IMG/imgCaract.svg" alt="category">
-                            <h4 class="__vnr-title">Name Product</h4>
-                            <p class="__vnr-price">$5.00</p>
+                    <div class="container-items">
+                        <div class="__items_item d-flex">
+                            <img class="__item-img" src="Vista/IMG/imgCaract.svg" alt="category">
+                            <h4 class="__item-title">Name Product</h4>
+                            <p class="__item-price">$5.00</p>
                         </div>
-                        <div class="__vaners_vnr d-flex">
-                            <img class="__vnr-img" src="Vista/IMG/imgMinVanerBW.svg" alt="category">
-                            <h4 class="__vnr-title">Name Product</h4>
-                            <p class="__vnr-price">$5.00</p>
+                        <div class="__items_item d-flex">
+                            <img class="__item-img" src="Vista/IMG/imgMinVanerBW.svg" alt="category">
+                            <h4 class="__item-title">Name Product</h4>
+                            <p class="__item-price">$5.00</p>
                         </div>
-                        <div class="__vaners_vnr d-flex">
-                            <img class="__vnr-img" src="Vista/IMG/imgCaract.svg" alt="category">
-                            <h4 class="__vnr-title">Name Product</h4>
-                            <p class="__vnr-price">$5.00</p>
+                        <div class="__items_item d-flex">
+                            <img class="__item-img" src="Vista/IMG/imgCaract.svg" alt="category">
+                            <h4 class="__item-title">Name Product</h4>
+                            <p class="__item-price">$5.00</p>
                         </div>
-                        <div class="__vaners_vnr d-flex">
-                            <img class="__vnr-img" src="Vista/IMG/imgMinVanerBW.svg" alt="category">
-                            <h4 class="__vnr-title">Name Product</h4>
-                            <p class="__vnr-price">$5.00</p>
+                        <div class="__items_item d-flex">
+                            <img class="__item-img" src="Vista/IMG/imgMinVanerBW.svg" alt="category">
+                            <h4 class="__item-title">Name Product</h4>
+                            <p class="__item-price">$5.00</p>
                         </div>
                     </div>
                 </div>
@@ -88,12 +88,12 @@
                 <div class="contSection-container mt-5">
                     <h3 class="my-3">Promotions</h3>
 
-                    <div class="promo container-vaners d-flex">
-                        <div class="__vaners_vnr d-flex">
-                            <img class="__vnr-img" src="Vista/IMG/imgCaract.svg" alt="category">
+                    <div class="promo container-items d-flex">
+                        <div class="__items_item d-flex">
+                            <img class="__item-img" src="Vista/IMG/imgCaract.svg" alt="category">
                         </div>
-                        <div class="__vaners_vnr d-flex">
-                            <img class="__vnr-img" src="Vista/IMG/imgMinVanerBW.svg" alt="category">
+                        <div class="__items_item d-flex">
+                            <img class="__item-img" src="Vista/IMG/imgMinVanerBW.svg" alt="category">
                         </div>
                     </div>
                 </div>

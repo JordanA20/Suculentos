@@ -3,7 +3,7 @@
     width: 200px;
 }
 
-#mdlP-quantity .qtt{
+.mdlP-quantity .qtt{
     width: 40px;
     height: 42px;
     margin: 0;
@@ -11,15 +11,15 @@
     text-align: center;
 }
 
-#mdlP-quantity #mdlP-qttMinus{
+.mdlP-quantity .qttMinus{
     border-radius: 12% 0 0 12%;
 }
 
-#mdlP-quantity #mdlP-qttPlus{
+.mdlP-quantity .qttPlus{
     border-radius: 0 12% 12% 0;
 }
 
-#mdlP-qttMinus:hover, #mdlP-qttPlus:hover{
+.qttMinus:hover, .qttPlus:hover{
     border-width: 3px;
 }
 
@@ -37,25 +37,25 @@
     height: 150px;
 }
 
-#mdlC-content{
+.mdlC-content{
     margin-bottom: 1rem;
     padding: .5rem;
     border: .1rem solid grey;
     border-radius: 1rem;
 }
 
-#mdlC-img{
+.mdlC-img{
     width: 90px;
     margin: .3rem .5rem;
 }
 
-#mdlC-price{
+.mdlC-price{
     font-size: 16px;
     margin: 1rem 0;
     color:dimgray;
 }
 
-#mdlC-quantity .qtt{
+.mdlC-quantity .qtt{
     width: 30px;
     height: 32px;
     margin: 0;
@@ -66,7 +66,12 @@
     color: black;
 }
 
-#mdlC-btnClose{
+.mdlC-quantity .qttMinus, .mdlC-quantity .qttPlus{
+    cursor: default;
+}
+
+
+.mdlC-btnClose{
     height: 120px;;
 }
 
@@ -87,15 +92,19 @@
 }
 
 /* 
-#mdlC-quantity #mdlP-qttMinus{
+#mdlC-quantity #qttMinus{
     border-radius: 12% 0 0 12%;
 }
 
-#mdlC-quantity #mdlP-qttPlus{
+#mdlC-quantity #qttPlus{
     border-radius: 0 12% 12% 0;
 } */
 
 /* 
 #mdlC-quantity{
+    
+} */
 
+/* .pointer{
+    cursor: pointer;
 } */

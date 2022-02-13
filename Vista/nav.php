@@ -7,13 +7,13 @@
                             <a class="nav-link active" href="/Suculentos/index.php">HOME</a>
                         </li>
                         <li class="nav-item dropdown d-flex align-items-center">
-                            <a class="nav-link" href="/Suculentos/Vista/menu.php">MENUE</a>
+                            <a class="nav-link" href="/Suculentos/Vista/menu.php?type=ALL&n=0">MENUE</a>
                             <span class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" role="button"></span>
                             <ul class="dropdown-menu dropdown-ul">
-                                <li><a class="dropdown-item" href="#">DISHES</a></li>
-                                <li><a class="dropdown-item" href="#">ACCOMPANIMENTS</a></li>
-                                <li><a class="dropdown-item" href="#">BREDS</a></li>
-                                <li><a class="dropdown-item" href="#">DESSERT</a></li>
+                                <li><a class="dropdown-item" href="/Suculentos/Vista/menu.php?type=DISHES&n=1">DISHES</a></li>
+                                <li><a class="dropdown-item" href="/Suculentos/Vista/menu.php?type=ACCOMPANIMENTS&n=2">ACCOMPANIMENTS</a></li>
+                                <li><a class="dropdown-item" href="/Suculentos/Vista/menu.php?type=BREDS&n=3">BREDS</a></li>
+                                <li><a class="dropdown-item" href="/Suculentos/Vista/menu.php?type=DESSERT&n=4">DESSERT</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -43,7 +43,7 @@
                         <button class="btn-warning btn-shop"><i class="bi bi-cart-fill"></i></button>
                         <div class="mx-3">
                                 <h5 class="my-0">My Cart</h5>
-                                <p class="m-0" id="infoCompra">Items (0) - $0.00</p> 
+                                <p class="m-0" id="cartDetail">Items (0) - $0.00</p> 
                         </div>
                     </div>
                 </nav>

@@ -21,46 +21,49 @@
            <div class="contSection container">
                 <div class="contSection-menuFilter container my-5">
                     <div class="btn-group">
-                        <input type="text" class="filter bg-light bg-gradient" value="Todos" disabled>
+                        <input class="filter bg-light bg-gradient" id="filterType" type="text" disabled>
                         <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent"></button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
-                            <li><span class="dropdown-item">Dishes</span></li>
-                            <li><span class="dropdown-item">Accompaniments</span></li>
-                            <li><span class="dropdown-item">Breds</span></li>
-                            <li><span class="dropdown-item">Dessert</span></li>
+                        <ul id="typeOptions" class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                            <li class="dropdown-item">ALL<input type="hidden" value="0"></input></li>
+                            <li class="dropdown-item">DISHES<input type="hidden" value="1"></input></li>
+                            <li class="dropdown-item">ACCOMPANIMENTS<input type="hidden" value="2"></input></li>
+                            <li class="dropdown-item">BREDS<input type="hidden" value="3"></input></li>
+                            <li class="dropdown-item">DESSERT<input type="hidden" value="4"></input></li>
                         </ul>
                     </div>
 
-                    
+                    <!-- <div class="input-group">
+                        <select class="filter form-select" id="filterCategories" aria-label="Example select with button addon">
+                            <option value="0" selected>All</option>
+                            <option value="1">Dishes</option>
+                            <option value="2">Accompaniments</option>
+                            <option value="3">Breds</option>
+                            <option value="4">Dessert</option>
+                        </select>
+                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent"></button>
+                    </div> -->
                 </div>
 
                 <div class="contSection-container">
+                    <!-- <button id="btn-prueba">PRUEBA</button> -->
                     <!-- <h3 class="my-3">The Best Sellers</h3> -->
 
-                    <div class="container-vaners">
-                        
-                    <?php 
-                        $consultarproductos = $datos->query("SELECT id_producto, nombre, costo, descripcion, foto FROM producto "); 
-                        while($producto = $consultarproductos->fetch(PDO::FETCH_OBJ)){ 
-                    ?>
+                    <div class="container-items">
+                        <div id="items" class="container-items"></div>
 
-                        <div class="container-vaners">
-                            <div class="__vaners_vnr d-flex" data-bs-toggle="modal" data-bs-target="#mdlProduct">
-                                <div class="__vaners_vnr_shop d-flex flex-row justify-content-end">
+                        <template class="templateItem">
+                            <div class="__items_item d-flex pointer" data-bs-toggle="modal" data-bs-target="#mdlProduct">
+                                <div class="__items_item_shop d-flex flex-row justify-content-end">
                                     <div>
                                         <button class="btn-warning btn-shop"><i class="bi bi-basket2-fill"></i></button>
                                     </div>
                                 </div>
-                                <img class="__vnr-img" src="IMG/imgCaract.svg" alt="category">
-                                <h4 class="__vnr-title"><?php echo $producto->nombre; ?></h4>
-                                <div class="d-flex flex-row">
-                                    $ <p class="__vnr-price"><?php echo $producto->costo ?></p>
-                                </div>
-                                <input class="__vnr-id" type="hidden" name="id" value="<?php echo $producto->id_producto ?>">
-                                <input class="__vnr-description" type="hidden" name="description" value="<?php echo $producto->descripcion ?>">
+                                <img class="__item-img" alt="category">
+                                <h4 class="__item-title pointer"></h4>
+                                <p class="__item-price"></p>
+                                <input class="__item-id" type="hidden" name="id">
                             </div>
-                        </div>
-                    <?php } ?>
+                        </template>
                     </div>
                 </div>
            </div>
