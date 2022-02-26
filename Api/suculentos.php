@@ -7,6 +7,9 @@
         $c = $_POST['category'];
         Products($c);
     }
+    else if($p == 'BSP'){
+        BestSellerProducts();
+    }
     // else if ($p == 'juegos'){
     //     AllJuegos();
     // }else if ($p == 'facultades'){
@@ -37,6 +40,12 @@
         $productDb = new ProductProcesses();
         $products = $productDb->GetProducts($c);
         print json_encode($products);
+    }
+
+    function BestSellerProducts(){
+        $productDb = new ProductProcesses();
+        $bsp = $productDb->GetBestSellerProducts();
+        print json_encode($bsp);
     }
   
     // function AllJuegos(){

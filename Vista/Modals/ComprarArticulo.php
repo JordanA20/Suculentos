@@ -65,7 +65,7 @@
 <template class="templateCart">
     <div class="mdlC-content">
         <div class="d-flex flex-row align-items-center">
-            <img class="mdlC-img pointer" src="/Suculentos/Vista/IMG/imgCaract.svg" alt="category">
+            <img class="mdlC-img pointer" src="" alt="category">
             <div class="container-sm">
                 <h4 class="mdlC-title pointer"></h4>
                 <h5 class="mdlC-price"></h5>
