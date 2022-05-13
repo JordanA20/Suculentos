@@ -12,7 +12,6 @@
     </head>
     <body class="contBody">
         <header>
-            
                 <!--Nav importado-->
                 <?php include("Vista/nav.php"); ?>
 
