@@ -4,6 +4,7 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Suculentos | Menu</title>
         <link rel="stylesheet" href="Estilo/estilo.css">
         <link rel="stylesheet" href="Estilo/modals.css">
@@ -20,9 +21,9 @@
         <section>
             <div class="contSection-menuFilter container my-5">
                 <h2 id="ttl-menu">MENU</h2>
-                <div class="btn-group">
+                <div class="psStatic btn-group mb-5">
                     <input class="filter bg-light bg-gradient" id="filterType" type="text" disabled>
-                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent"></button>
+                    <button type="button" class="psStatic btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent"></button>
                     <ul id="typeOptions" class="dropdown-menu" aria-labelledby="dropdownMenuReference">
                         <li class="dropdown-item">ALL<input type="hidden" value="0"></input></li>
                         <li class="dropdown-item">DISHES<input type="hidden" value="1"></input></li>
@@ -31,19 +32,6 @@
                         <li class="dropdown-item">DESSERT<input type="hidden" value="4"></input></li>
                     </ul>
                 </div>
-                <!-- <div class="contSection container">
-
-                    <div class="input-group">
-                        <select class="filter form-select" id="filterCategories" aria-label="Example select with button addon">
-                            <option value="0" selected>All</option>
-                            <option value="1">Dishes</option>
-                            <option value="2">Accompaniments</option>
-                            <option value="3">Breds</option>
-                            <option value="4">Dessert</option>
-                        </select>
-                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent"></button>
-                    </div>
-                </div> -->
 
                 <div class="contSection-container">
                     <!-- <button id="btn-prueba">PRUEBA</button> -->
@@ -62,12 +50,13 @@
                         </template>
                     </div>
                 </div>
-           </div>
+            </div>
             
-           <?php include("Modals/comprarArticulo.php");?>
+            <?php include("Modals/comprarArticulo.php");?>
         </section>
         <footer></footer>
         <script type="text/javascript" src="../Procesos/JavaScript/menu.js"></script>
         <script type="text/javascript" src="../Procesos/JavaScript/pedido.js"></script>
+        <script type="text/javascript" src="../Procesos/JavaScript/movilNav.js"></script>
     </body>
 </html>

@@ -6,7 +6,7 @@
 
 // Modals
 //      Modal Producto
-const modalP = new bootstrap.Modal(document.getElementById('mdlProduct'), "");
+const modalP = new bootstrap.Modal(document.querySelector('#mdlProduct'), "");
 const objMdlP = document.querySelector('#mdlProduct');
 const mdlProductItem = document.querySelector('#mdlP-item');
 const btnAddToCart = document.querySelector('#addToCart');
@@ -40,7 +40,7 @@ const FetchData = async (op, sd, dt) => {
         data.append('category', dt);
 
     try {
-        const res = await fetch('/Suculentos/Api/suculentos.php', {
+        const res = await fetch('/Proyectos/Suculentos/Api/suculentos.php', {
             method: 'POST',
             body: data
         })
@@ -58,7 +58,7 @@ const SetDataForItems = e => {
     
     Object.values(items).forEach(product => {
         templateItem.querySelector('.__item-id').value = product.id_producto;
-        templateItem.querySelector('.__item-img').setAttribute('src', `/Suculentos/Vista/IMG/${product.foto}`);
+        templateItem.querySelector('.__item-img').setAttribute('src', `/Proyectos/Suculentos/Vista/IMG/${product.foto}`);
         templateItem.querySelector('.__item-title').textContent = product.nombre;
         templateItem.querySelector('.__item-price').textContent = `$${product.costo}`;
         
@@ -76,7 +76,7 @@ item.addEventListener('click', e => {
 
 // Añade la información del producto seleccionado al modal de Producto.
 const setDataForModalP = x => {
-    mdlProductItem.querySelector('#mdlP-img').setAttribute('src', `/Suculentos/Vista/IMG/${items[x].foto}`);
+    mdlProductItem.querySelector('#mdlP-img').setAttribute('src', `/Proyectos/Suculentos/Vista/IMG/${items[x].foto}`);
     mdlProductItem.querySelector('#mdlP-title').textContent = items[x].nombre;
     mdlProductItem.querySelector('#mdlP-description').textContent = items[x].descripcion
     mdlProductItem.querySelector('#mdlP-price').textContent = '$' + items[x].costo
@@ -174,7 +174,7 @@ const setDataForModalC = (op) => {
         getCartData();
 
     Object.values(cart).forEach(product => {
-        templateCart.querySelector('.mdlC-img').setAttribute("src", `/Suculentos/Vista/IMG/${product.foto}`);
+        templateCart.querySelector('.mdlC-img').setAttribute("src", `/Proyectos/Suculentos/Vista/IMG/${product.foto}`);
         templateCart.querySelector('.mdlC-title').textContent = product.nombre;
         templateCart.querySelector('.mdlC-price').textContent = '$' + product.costo;
         templateCart.querySelector('.mdlC-id').value = product.id_producto;
@@ -193,7 +193,7 @@ const setDataForModalC = (op) => {
     setTotalPriceAndQuantityItems();
 }
 
-//Valida que la cantidad no sea menor a 1 y mayor a 999.
+// Valida que la cantidad no sea menor a 1 y mayor a 999.
 const ValidateQuantity = (qtt) => {
     if(qtt.value <= 0)
         qtt.value = 1;
@@ -214,12 +214,15 @@ const getCartData = () => {
         cart[items[x].id_producto] = {...items[x], quantity: parseInt(productQttP.value)};
 }
 
-// Actualiza el precio total a pagar en el carrito.
+// Actualiza el precio total a pagar y la cantidad de articulos.
 const setTotalPriceAndQuantityItems = () =>{
-    let totalPrice = document.querySelector('#totalPrice');
-    let cartDatail = document.querySelector('#cartDetail');
-    totalPrice.textContent = '$' + total.toFixed(2);
-    cartDatail.textContent = `Items (${Object.keys(cart).length}) - $${total.toFixed(2)}`
+    let ttlPrice = document.querySelectorAll('.totalPrice');
+    let ttlItems = document.querySelector('.totalItems');
+
+    ttlPrice.forEach(element =>{
+        element.textContent = '$' + total.toFixed(2);
+    });
+    ttlItems.textContent = Object.keys(cart).length;
 }
 
 // Elimina un producto del carrito.

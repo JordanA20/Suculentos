@@ -16,11 +16,11 @@
                 <!--Nav importado-->
                 <?php include("Vista/nav.php"); ?>
 
-                <div class="contHeader_head">
+                <div class="contHeader_head"> 
                     <div class="__head_slogan text-center">
                         <h4>SUCULENTOS</h3>
-                        <h3>La comidas mas suculentas que encontraras en todo Panamá</h2>
-                        <h4>Compruebalo tu mismo</h3>
+                        <h3>La comidas mas suculentas que encontraras en todo Panamá.</h2>
+                        <h4>Compruebalo tu mismo.</h3>
                     </div>
                     <div class="__head_vaners">
                         <div class="__items_item d-flex justify-content-start">
@@ -98,5 +98,6 @@
         <footer></footer>
         <script type="text/javascript" src="../Suculentos/Procesos/JavaScript/homepage.js"></script>
         <script type="text/javascript" src="../Suculentos/Procesos/JavaScript/pedido.js"></script>
+        <script type="text/javascript" src="../Suculentos/Procesos/JavaScript/movilNav.js"></script>
     </body>
 </html>

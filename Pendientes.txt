@@ -1,0 +1,3 @@
+* / Lograr hacer que el filtro de categoria que por detras del el nav.
+* Hacer que el modal sea mas pequeño y que empize mas abajo.
+* Colocarle al carrito las animaciones de ocultar y aparecer.

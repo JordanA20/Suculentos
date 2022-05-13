@@ -91,6 +91,15 @@
     height: 3rem;
 }
 
+
+/* Mobil */
+
+@media  screen and (max-width: 768px) {
+    #mdlCart{
+        top: 5.5rem;
+    }    
+}
+
 /* 
 #mdlC-quantity #qttMinus{
     border-radius: 12% 0 0 12%;

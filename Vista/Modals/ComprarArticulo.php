@@ -50,7 +50,7 @@
                 <div id="totalContainer" class="mdlFooter-cont d-flex flex-row">
                     <h5>TOTAL PRICE</h5>
                     <div class="mdlFooter-subCont d-flex justify-content-end">
-                        <h5 id="totalPrice"></h5>
+                        <h5 class="totalPrice"></h5>
                     </div>
                 </div>
                 <div class="mdlFooter-cont d-grid gap-2">
