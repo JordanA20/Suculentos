@@ -1,0 +1,383 @@
+.contBody{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: var(--bg-color-secondary);
+}
+
+header{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+/*Header*/
+.contHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://suculentos.herokuapp.com/Vista/IMG/backgroundMH.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+#logoSucu{
+    width: 110px;
+    height: 80px;
+}
+
+nav{
+    background-color: black;
+}
+
+.navD{
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.navDesktop{
+    width: 100%;
+    display: flex;
+}
+
+.navMovil{
+    display: none;
+}
+
+.logoRS{
+    width: 2.2vw;
+    border-radius: .5rem;
+}
+
+.nav-ul{
+    width: 100%;
+    margin-left: 2rem;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.contNavP{
+    width: 100%;
+}
+
+.contNavRC{
+    width: 25%;
+}
+
+.nav-ul li{
+    padding: 0;
+    margin: 0 .5rem;
+}
+
+li span{
+    padding-left: 4rem;
+    position: absolute;
+    color: white;
+}
+
+#linkMenu{
+    position: absolute;
+    padding: 0 0 0 1rem;
+}
+
+#navEvents{
+    margin-left: 5.8rem;
+}
+
+.dropdown-ul{
+    margin-left: -5rem;
+}
+
+.nav-redes{
+    width: 100%;
+}
+
+
+/*Main*/
+.__head_slogan{
+    width: 500px;
+    min-height: 215px;
+    margin-top: 9rem;
+    margin-bottom: 3rem;
+}
+
+.__head_vaners{
+    min-height: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-content: center;
+    background-color: white;
+}
+
+/*vaners de caracteristicas*/
+.__items_item{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.__item-img{
+    width: 90px;
+    height: 75px;
+    margin: 1rem 0 .5rem 0;
+}
+
+.__items_item-line{
+    width: 7rem;
+    height: .2rem;
+    margin: .1rem 0 .6rem 0;
+    background-color: var(--color-fuchsia);
+    border-radius: 15%;
+}
+
+/*Section*/
+.contSection{
+    margin: 5rem 0;
+}
+
+.contSection-container{
+    display: flex;
+    justify-content: center;
+}
+
+.container-items{
+    width: 100%;
+    min-height: 225px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-items .__items_item{
+    margin: 0 .8rem;
+    min-width: 225px;
+    height: auto;
+    padding-top: 1rem;
+    background-color: white;
+    border-radius: .4rem;
+}
+
+.container-items .__item-img{
+    width: 190px;
+    height: 190px;
+    margin-top: 0;
+    border-radius: 4px;
+}
+
+/*Section-Promotions*/
+.promo .__items_item{
+    width: 48%;
+    min-height: 320px;
+}
+
+
+/*Pagina de Menu*/
+    #ttl-menu{
+        margin-bottom: 4rem;
+        text-align: center;
+        font-size: 36px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    /*Barra de filtro*/
+    .filter{
+        width: 10rem;
+        padding-left: .4rem;
+    }
+
+
+/*Generales*/
+.pointer{
+    cursor: pointer;
+}
+
+.pstStatic{
+    position: static !important;
+}
+
+:root{
+    --bg-color-secondary: #f1e7ef;
+    --color-fuchsia: #E424F5;
+}
+
+
+/*Resposive*/
+@media screen and (max-width: 1142px){
+
+    .nav-item{
+        font-size: 1.4vw;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    
+    .navDesktop{
+        display: none;
+    }
+
+    .contHeader{
+        position: fixed;
+        top: 0;
+    }
+
+    .contSection-menuFilter{ /*menu*/
+        padding-top: 5rem;
+    }
+
+    .nav{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navD{
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navMovil{
+        display: flex;
+        justify-content: right;
+        left: 80%;
+    }
+
+    .navCart{
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .btn-shop{
+        width: 3rem;
+        height: 5rem;
+    }
+
+    .nav_movil-button{
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav_movil-button-btn{
+        width: 3rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+        border-style: none;
+        background-color: transparent;
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    .nav-item a{
+        display: flex;
+        margin: .5rem 0 .5rem 1rem;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    #linkMenuM{
+        z-index: 1;
+    }
+
+    #dropDMenuM{
+        font-size: 20px;
+        margin-left: .8rem;
+    }
+
+    .oculto{
+        display: none;
+    }
+    
+    .visible{
+        width: 100%;
+        height: 100%;
+        margin-top: 4rem;
+        padding: .1rem 0 0 0;
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+    }
+
+    #navM-ul{
+        width: 40%;
+        height: 100%;
+        padding: 1rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+    }
+    
+    .ocultar{
+        animation-name: navInv;
+        animation-duration: .5s;
+        right: -100%;
+        background-color: transparent;
+    }
+    .visibilizar{
+        animation-name: navVis;
+        animation-duration: .5s;
+        background-color: #1312137c;
+    }
+
+
+    /*Section*/
+    .contSection{
+        margin: 5rem 0;
+    }
+
+    .contSection-container{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container-items .__items_item{
+        width: 45%; min-width: 45%;
+    }
+    
+    .container-items .__item-img{
+        width:85; max-width: 85%;
+        height: 85%; max-height: 85%;
+        margin: 0 !important;
+    }
+}
+
+
+@media screen and (max-width: 520px){
+    #navM-ul{
+        min-width: 60%;
+    }
+
+    .__head_slogan{
+        width: 100%;
+    }
+
+    .container-items .__items_item{
+        width: 42.7%; min-width: 40%;
+    }
+
+    .__item-title{
+        font-size: 4.5vw;
+    }
+}
+
+
+/*Animaciones*/
+@keyframes navInv {
+    from{ right: 0; }
+    to{ right: -100%; }
+}
+
+@keyframes navVis {
+    from{ 
+        right: -100%;
+        background-color: transparent;
+    }
+    to{ 
+        right: 0;
+        background-color: transparent;
+    }
+}
