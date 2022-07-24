@@ -154,8 +154,10 @@ li span{
 
 .container-items{
     width: 100%;
-    min-height: 225px;
     display: flex;
+}
+
+.container-items #items{
     flex-wrap: wrap;
     justify-content: center;
 }
@@ -163,11 +165,16 @@ li span{
 .container-items .__items_item{
     margin: 0 1.5rem;
     min-width: 225px;
+    max-width: 225px;
     height: auto;
     padding-top: 1rem;
     background-color: white;
     border-radius: .4rem;
 }
+
+/* .container-items .__item-title{
+    text-align: center;
+} */
 
 .container-items .__item-img{
     width: 190px;
