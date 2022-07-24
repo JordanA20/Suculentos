@@ -33,7 +33,7 @@ const  connection = mysql.createPool({
 });
 
 //
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
   res.type("text/html");
   res.render(
     "index",
@@ -45,14 +45,16 @@ app.get("/", (req, res) => {
 });
 
 app.get('/menu', (req, res) => {
-  let type = res.body.type;
-  let num = res.body.n;
+  let type = req.query.type;
+  let num = req.query.n;
 
   res.type('text/html');
   res.render(
     'pages/menu',
-    filterNom = type,
-    filterNum = n,
+    {
+      filterNom: type,
+      filterNum: num
+    },
     (err, html) => {
       if (err) throw err;
       res.send(html);
@@ -84,10 +86,6 @@ app.get('/bSProducts', (req, res) => {
       res.send('Not result');
   });
 });
-
-setInterval(function() {
-  connection.query('SELECT 1');
-}, 5 * 60000);
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`)

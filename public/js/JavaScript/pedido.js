@@ -9,14 +9,14 @@ const objMdlP = document.querySelector('#mdlProduct');
 const mdlProductItem = document.querySelector('#mdlP-item');
 const btnAddToCart = document.querySelector('#addToCart');
 
-//      Modal Carrito
+//      Modal Carrito.
 const modalC = new bootstrap.Modal(document.querySelector('#mdlCart'), "");
 const objMdlC = document.querySelector('#mdlCart');
 const mdlCartItem = document.querySelector('#mdlC-item');
 const templateCart = document.querySelector('.templateCart').content;
 const fragment = document.createDocumentFragment();
 
-// Variables generales
+// Variables generales.
 let items = {};
 export let cart = {};
 let total;

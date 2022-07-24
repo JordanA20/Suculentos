@@ -14,14 +14,15 @@
     <body class="contBody">
         <header>
             <!--Nav importado-->
-            <?php include("nav.php"); ?>
+            <%- include("nav.html") %>
         </header>
         <section>
             <div class="contSection-menuFilter container my-5">
                 <h2 id="ttl-menu">MENU</h2>
                 <div class="pstStatic btn-group mb-5">
-                    <input class="filter bg-light bg-gradient" id="filterType" type="text" disabled>
+                    <input class="filter bg-light bg-gradient" id="filterType" type="text" disabled value="<%= filterNom %>">
                     <button type="button" class="pstStatic btn btn-secondary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent"></button>
+                    <input id="filterID" type="hidden" name="idFilter" value="<%= filterNum %>">
                     <ul id="typeOptions" class="dropdown-menu" aria-labelledby="dropdownMenuReference">
                         <li class="dropdown-item">ALL<input type="hidden" value="0"></input></li>
                         <li class="dropdown-item">DISHES<input type="hidden" value="1"></input></li>
@@ -36,7 +37,7 @@
                     <!-- <h3 class="my-3">The Best Sellers</h3> -->
 
                     <div class="container-items">
-                        <div id="items" class="container-items"></div> 
+                        <div id="items" class="container-items justify-content-start"></div> 
 
                         <template class="templateItem">
                             <div class="__items_item d-flex pointer my-3" data-bs-toggle="modal" data-bs-target="#mdlProduct">
@@ -50,7 +51,7 @@
                 </div>
             </div>
             
-            <?php include("modals/itemHandlers.html");?>
+            <%- include("modals/itemHandlers.html"); %>
         </section>
         <footer></footer>
         <script type="module" src="../js/JavaScript/menu.js"></script>

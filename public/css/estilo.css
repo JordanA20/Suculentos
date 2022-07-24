@@ -14,8 +14,13 @@ header{
 /*Header*/
 .contHeader{
     width: 100%;
+    position: fixed;
     display: flex;
     flex-direction: column;
+    top: 0;
+}
+
+header{
     background-image: url("https://suculentos.herokuapp.com/Vista/IMG/backgroundMH.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -95,10 +100,14 @@ li span{
 
 
 /*Main*/
+.contHeader_head{
+    height: 100%;
+    min-height: 690px;
+}
+
 .__head_slogan{
     width: 500px;
-    min-height: 215px;
-    margin-top: 9rem;
+    min-height: 428px;
     margin-bottom: 3rem;
 }
 
@@ -148,10 +157,11 @@ li span{
     min-height: 225px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container-items .__items_item{
-    margin: 0 .8rem;
+    margin: 0 1.5rem;
     min-width: 225px;
     height: auto;
     padding-top: 1rem;
@@ -168,12 +178,16 @@ li span{
 
 /*Section-Promotions*/
 .promo .__items_item{
-    width: 48%;
+    width: 45%;
     min-height: 320px;
 }
 
 
-/*Pagina de Menu*/
+/*Pagina de Menu*/    
+    .contSection-menuFilter{ /*menu*/
+        padding-top: 5rem;
+    }
+
     #ttl-menu{
         margin-bottom: 4rem;
         text-align: center;
@@ -216,15 +230,6 @@ li span{
     
     .navDesktop{
         display: none;
-    }
-
-    .contHeader{
-        position: fixed;
-        top: 0;
-    }
-
-    .contSection-menuFilter{ /*menu*/
-        padding-top: 5rem;
     }
 
     .nav{
@@ -336,6 +341,7 @@ li span{
     
     .container-items .__items_item{
         width: 45%; min-width: 45%;
+        margin: 0 .8rem;
     }
     
     .container-items .__item-img{

@@ -5,13 +5,11 @@ const tpOptions = document.querySelector('#typeOptions');
 
 // Evento de cargado del dom, en el que obtiene parametros de la url y se envian al metodo para obtener los productos segun el tipo.
 document.addEventListener('DOMContentLoaded', async () => {
-    let queryString = window.location.search;
-    let urlParams = new URLSearchParams(queryString);
-    let type = urlParams.get('type');
-    let id = urlParams.get('n');
-    let filter = document.querySelector('#filterType');
-
-    filter.value = type;
+    // let queryString = window.location.search;
+    // let urlParams = new URLSearchParams(queryString);
+    // let type = urlParams.get('type');
+    // let id = urlParams.get('n');
+    let id = document.querySelector('#filterID').value;
     const data = await FetchData('products');
     SetItems(data);
     SetDataForItems(id);
