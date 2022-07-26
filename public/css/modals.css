@@ -1,7 +1,7 @@
 /* Modal Producto */
-#mdlP-img{
-    width: 200px;
-}
+#mdlProduct .mdlP{ width: 650px; }
+
+#mdlP-img{ width: 250px; }
 
 .mdlP-quantity .qtt{
     width: 40px;
@@ -70,50 +70,19 @@
     cursor: default;
 }
 
+.mdlC-btnClose{ height: 120px;; }
 
-.mdlC-btnClose{
-    height: 120px;;
-}
+.mdlFooter{ height: 150px; }
 
-.mdlFooter{
-    height: 150px;
-}
+.mdlFooter-cont{ width: 100%; }
 
-.mdlFooter-cont{
-    width: 100%;
-}
+.mdlFooter-subCont{ width: 75%; }
 
-.mdlFooter-subCont{
-    width: 75%;
-}
-
-#btnCheckout{
-    height: 3rem;
-}
+#btnCheckout{ height: 3rem; }
 
 
 /* Mobil */
 
 @media  screen and (max-width: 768px) {
-    #mdlCart{
-        top: 5.5rem;
-    }    
+    #mdlCart{ top: 5.5rem; }
 }
-
-/* 
-#mdlC-quantity #qttMinus{
-    border-radius: 12% 0 0 12%;
-}
-
-#mdlC-quantity #qttPlus{
-    border-radius: 0 12% 12% 0;
-} */
-
-/* 
-#mdlC-quantity{
-    
-} */
-
-/* .pointer{
-    cursor: pointer;
-} */
