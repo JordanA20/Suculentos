@@ -21,7 +21,7 @@ header{
 }
 
 header{
-    background-image: url("https://suculentos.herokuapp.com/Vista/IMG/backgroundMH.jpg");
+    background-image: url("https://suculentos.herokuapp.com/img/backgroundMH.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom: 1px solid rgb(209, 209, 209);
@@ -183,6 +183,7 @@ li span{
     max-height: 25vw;
     margin: 0 1rem;
     padding: 0;
+    border-radius: .6rem;
 }
 
 .promo .__item-img{
