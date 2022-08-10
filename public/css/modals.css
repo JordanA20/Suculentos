@@ -84,5 +84,13 @@
 /* Mobil */
 
 @media  screen and (max-width: 768px) {
+    #mdlProduct .mdlP{ width: auto; }
+
+    #mdlP-item .__items_item{
+        width: 100%;
+    }
+
+    #mdlP-img{ width: 50vw; }
+
     #mdlCart{ top: 5.5rem; }
 }
