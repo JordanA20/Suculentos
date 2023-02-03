@@ -26,11 +26,7 @@ export const FetchData = async (op) => {
     let urlPrms = op;
 
     try {
-        const res = await fetch(`https://app-suculentos.herokuapp.com/${urlPrms}`,{
-            headers: {
-                Host: 'app-suculentos.herokuapp.com'
-            }
-        });
+        const res = await fetch(`/${urlPrms}`,{});
         const datos = await res.json();
         return await datos;
     } catch (error) {
